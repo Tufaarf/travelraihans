@@ -21,14 +21,14 @@
                     <div>
                         <x-input-label for="name" :value="__('Name')" />
                         <x-text-input id="name" class="block mt-1 w-full" type="text" name="name"
-                        value="{{$client->name}}" required autofocus autocomplete="name" />
+                        value="{{$client->name}}" autofocus autocomplete="name" />
                         <x-input-error :messages="$errors->get('name')" class="mt-2" />
                     </div>
 
                     <div class="mt-4">
                         <x-input-label for="occupation" :value="__('occupation')" />
                         <x-text-input id="occupation" class="block mt-1 w-full" type="text" name="occupation"
-                        value="{{$client->occupation}}" required autofocus autocomplete="occupation" />
+                        value="{{$client->occupation}}" autofocus autocomplete="occupation" />
                         <x-input-error :messages="$errors->get('occupation')" class="mt-2" />
                     </div>
 

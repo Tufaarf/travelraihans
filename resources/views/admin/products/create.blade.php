@@ -30,6 +30,12 @@
                     </div>
 
                     <div class="mt-4">
+                        <x-input-label for="price" :value="__('price')" />
+                        <x-text-input id="price" class="block mt-1 w-full" type="text" name="price" :value="old('price')" required autofocus autocomplete="price" />
+                        <x-input-error :messages="$errors->get('price')" class="mt-2" />
+                    </div>
+
+                    <div class="mt-4">
                         <x-input-label for="thumbnail" :value="__('thumbnail')" />
                         <x-text-input id="thumbnail" class="block mt-1 w-full" type="file" name="thumbnail" required autofocus autocomplete="thumbnail" />
                         <x-input-error :messages="$errors->get('thumbnail')" class="mt-2" />

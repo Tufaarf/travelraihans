@@ -85,6 +85,10 @@
                         {{ __('Appointments') }}
                     </x-nav-link>
 
+                    <x-nav-link :href="route('admin.partnership.index')" :active="request()->routeIs('admin.partnership.index')">
+                        {{ __('Partnership') }}
+                    </x-nav-link>
+
                 </div>
             </div>
 

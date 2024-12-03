@@ -27,6 +27,7 @@ class StoreProductRequest extends FormRequest
             'tagline' => ['required','string','max:255'],
             'thumbnail' => ['required','image','mimes:png,jpg,jpeg'],
             'about' => ['required','string','max:65535'],
+            'price' =>['required', 'integer'],
             'keypoints.*' => ['required','string','max:255'],
         ];
     }

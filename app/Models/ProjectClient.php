@@ -14,5 +14,6 @@ class ProjectClient extends Model
         'occupation',
         'avatar',
         'logo',
+
     ] ;
 }

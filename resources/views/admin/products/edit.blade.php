@@ -33,6 +33,12 @@
                     </div>
 
                     <div class="mt-4">
+                        <x-input-label for="price" :value="__('price')" />
+                        <x-text-input id="price" class="block mt-1 w-full" type="text" name="price" :value="old('price')" required autofocus autocomplete="price" />
+                        <x-input-error :messages="$errors->get('price')" class="mt-2" />
+                    </div>
+
+                    <div class="mt-4">
                         <x-input-label for="thumbnail" :value="__('thumbnail')" />
                         <img src="{{Storage::url($product->thumbnail)}}" alt="" class="rounded-2xl object-cover w-[90px] h-[90px]">
                         <x-text-input id="thumbnail" class="block mt-1 w-full" type="file" name="thumbnail" autofocus autocomplete="thumbnail" />
